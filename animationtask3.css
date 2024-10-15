@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    animation: move 9s ease infinite;
+    position: relative;
+    border-radius: 30px;
+}
+@keyframes move{
+    0%
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    25%{
+        position: absolute;
+        top: 0px;
+        left:1700px;
+        background-color: blueviolet;
+        transform: rotate(90deg);
+    }
+    50%{
+        position: absolute;
+        top: 700px;
+        left:900px;
+        background-color: blue;
+        transform: rotate(-90deg);
+    }
+    75%{
+        position: absolute;
+        top: 0px;
+        left:0px;
+        background-color: pink;
+        transform: rotate(90deg);
+    }
+}

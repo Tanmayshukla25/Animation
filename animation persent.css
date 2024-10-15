@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 500px;
+    height: 400px;
+    background-color: red;
+    animation: move 6s ease infinite;
+    position: relative;
+}
+@keyframes move{
+    0%
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    50%{
+        position: absolute;
+        top: 0;
+        left:1500px;
+        background-color: blueviolet;
+        transform: rotate(90deg);
+    }
+    100%{
+        position: absolute;
+        top: 0;
+        left:0;
+        background-color: blue;
+        transform: rotate(-90deg);
+    }
+}
